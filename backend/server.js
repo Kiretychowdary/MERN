@@ -25,8 +25,8 @@ const User = require('./models/user');
 
 // Serve the all.html file on the root URL
 app.get('/', (req, res) => {
-    res.send("hii");
-    // res.sendFile(path.join(__dirname, 'public', 'all.html')); // Adjust the path based on where your all.html is located
+    
+    res.sendFile(path.join(__dirname, 'public', 'all.html')); // Adjust the path based on where your all.html is located
 });
 
 // User Registration
